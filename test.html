@@ -1,53 +1,173 @@
 <html>
 <body>
-  <!-- https://caniuse.com/#feat=input-number&feature_sort=rscore -->
-  <input type="number" name="test1" value="1" />
-
-  <!-- https://caniuse.com/#feat=subresource-integrity -->
-  <link rel="stylesheet" type="text/css" href="tests/css/subresource-red.css">
-  <link rel="stylesheet" type="text/css" href="tests/css/subresource-green.css" integrity="sha384-xHauj1D1zbf2UBAwJC9tEvZwDC56UxfdlgDFgedXmMiybAz1Ws2Kn/7tgSbnvjA6" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="tests/css/subresource-blue.css" integrity="sha384-xHauj1D1zbf2UBAwJC9tEvZwDC56UxfdlgDFgedXmMiybAz1Ws2Kn/7tgSbnvjA6" crossorigin="anonymous">
-  <div id="subresource-integrity">
-    Test of subresource-integrity
-    <div class="red">Should be red</div>
-    <div class="green">Should be green</div>
-    <div class="blue">Should *not* be blue</div>
+  <div>
+    <b>Test of input-number</b><br />
+    Reference: <a href="https://caniuse.com/#feat=input-number">https://caniuse.com/#feat=input-number</a>
+    <div>
+      <input type="number" name="test1" value="1" />
+    </div>
   </div>
 
-  <!-- https://caniuse.com/#feat=srcset -->
-  Srcset
-  <img srcset="tests/imgs/success.png" />
-  Srcset and sizes
-  <img srcset="tests/imgs/failure.png 100w, tests/imgs/success.png 200w" sizes="100px" />
+  <div>
+    <b>Test of subresource-integrity</b><br />
+    Reference: <a href="https://caniuse.com/#feat=subresource-integrity">https://caniuse.com/#feat=subresource-integrity</a>
+    <div id="subresource-integrity">
+      <link rel="stylesheet" type="text/css" href="tests/css/subresource-red.css">
+      <link rel="stylesheet" type="text/css" href="tests/css/subresource-green.css" integrity="sha384-xHauj1D1zbf2UBAwJC9tEvZwDC56UxfdlgDFgedXmMiybAz1Ws2Kn/7tgSbnvjA6" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="tests/css/subresource-blue.css" integrity="sha384-xHauj1D1zbf2UBAwJC9tEvZwDC56UxfdlgDFgedXmMiybAz1Ws2Kn/7tgSbnvjA6" crossorigin="anonymous">
+      <div class="red">Should be red</div>
+      <div class="green">Should be green</div>
+      <div class="blue">Should *not* be blue</div>
+    </div>
+  </div>
 
-  <!-- https://caniuse.com/#feat=progress -->
-  <progress max="100" value="70"></progress>
-  <!-- https://caniuse.com/#feat=meter -->
-  <meter min="0" max="100" low="33" high="66" optimum="80" value="50"></meter>
-  <!-- https://caniuse.com/#feat=input-range -->
-  <input type="range" id="start" name="volume" min="0" max="11" />
+  <div>
+    <b>Test of srcset</b><br />
+    Reference: <a href="https://caniuse.com/#feat=srcset">https://caniuse.com/#feat=srcset</a>
+    <div>
+      Srcset
+      <img srcset="tests/imgs/success.png" />
+      <br />
+      Srcset and sizes
+      <img srcset="tests/imgs/failure.png 100w, tests/imgs/success.png 200w" sizes="100px" />
+    </div>
+  </div>
 
-  <!-- https://caniuse.com/#feat=ol-reversed -->
-  <ol reversed="true">
-    <li> Should be 3</li>
-    <li> Should be 2</li>
-    <li> Should be 1</li>
-  </ol>
+  <div>
+    <b>Test of progress element</b><br />
+    Reference: <a href="https://caniuse.com/#feat=progress">https://caniuse.com/#feat=progress</a>
+    <div>
+      <progress max="100" value="70"></progress>
+    </div>
+  </div>
 
-  <!-- https://caniuse.com/#feat=hidden -->
-  <p hidden="true">This should *not* be visible</p>
-  <p>This should be visible</p>
+  <div>
+    <b>Test of meter element</b><br />
+    Reference: <a href="https://caniuse.com/#feat=meter">https://caniuse.com/#feat=meter</a>
+    <div>
+      <meter min="0" max="100" low="33" high="66" optimum="80" value="50"></meter>
+    </div>
+  </div>
 
+  <div>
+    <b>Test of input-range element</b><br />
+    Reference: <a href="https://caniuse.com/#feat=input-range">https://caniuse.com/#feat=input-range</a>
+    <div>
+      <input type="range" id="start" name="volume" min="0" max="11" />
+    </div>
+  </div>
 
-  <!-- https://caniuse.com/#feat=svg-html5 -->
-  <svg height=86 width=90 viewBox="5 9 90 86">
-    <path stroke=#F53F0C stroke-width=10 fill=#F5C60C stroke-linejoin=round d='M 10,90 L 90,90 L 50,14 Z'/>
-    <line stroke=black stroke-width=10 stroke-linecap=round x1=50 x2=50 y1=45 y2=75 />
-  </svg>
-  <p>Should be rotated:</p>
-  <svg height=86 width=90 viewBox="5 9 90 86" style="transform: rotate(0.25turn);">
-    <path stroke=#F53F0C stroke-width=10 fill=#F5C60C stroke-linejoin=round d='M 10,90 L 90,90 L 50,14 Z'/>
-    <line stroke=black stroke-width=10 stroke-linecap=round x1=50 x2=50 y1=45 y2=75 />
-  </svg>
+  <div>
+    <b>Test of ol-reversed</b><br />
+    Reference: <a href="https://caniuse.com/#feat=ol-reversed">https://caniuse.com/#feat=ol-reversed</a>
+    <div>
+      <ol reversed="true">
+        <li> Should be 3</li>
+        <li> Should be 2</li>
+        <li> Should be 1</li>
+      </ol>
+    </div>
+  </div>
+
+  <div>
+    <b>Test of hidden attribute</b><br />
+    Reference: <a href="https://caniuse.com/#feat=hidden">https://caniuse.com/#feat=hidden</a>
+    <div>
+      <p>This should be visible: <span>XXX</span></p>
+      <p> This should *not* be visible: <span hidden="true">XXX</span></p>
+    </div>
+  </div>
+
+  <div>
+    <b>Test of svg-html5 element</b><br />
+    Reference: <a href="https://caniuse.com/#feat=svg-html5">https://caniuse.com/#feat=svg-html5</a>
+    <div>
+      <p>Inline svg:</p>
+      <svg height=86 width=90 viewBox="5 9 90 86">
+        <path stroke=#F53F0C stroke-width=10 fill=#F5C60C stroke-linejoin=round d='M 10,90 L 90,90 L 50,14 Z'/>
+        <line stroke=black stroke-width=10 stroke-linecap=round x1=50 x2=50 y1=45 y2=75 />
+      </svg>
+      <p>Should be rotated:</p>
+      <svg height=86 width=90 viewBox="5 9 90 86" style="transform: rotate(0.25turn);">
+        <path stroke=#F53F0C stroke-width=10 fill=#F5C60C stroke-linejoin=round d='M 10,90 L 90,90 L 50,14 Z'/>
+        <line stroke=black stroke-width=10 stroke-linecap=round x1=50 x2=50 y1=45 y2=75 />
+      </svg>
+    </div>
+  </div>
+
+  <h2>Javascript Tests</h2>
+  <div id="javascript-tests"></div>
+
+  <script type="text/javascript">
+    function log_result(test, result, msg) {
+      var html = "<div><b>Javascript test of " + test + "</b><br />Reference: <a href='https://caniuse.com/#feat=" + test + "'>https://caniuse.com/#feat=" + test + "</a><div>" + (result ? "<span style='color: green;'>Success!</span> " : "<span style='color: red;'>Failure!</span> ") + (msg ? msg : "") + "</div></div>";
+      document.getElementById("javascript-tests").innerHTML += html;
+    }
+
+    function run_test(name, f) {
+      try {
+        if (f()) {
+          log_result(name, true);
+        }
+        else {
+          log_result(name, false, "Bad result");
+        }
+      }
+      catch (e) {
+        log_result(name, false, "Exception: " + e);
+      }
+    }
+
+    //object-entries
+    run_test("object-entries", function() {
+      var a = Object.entries({"elem" : 1});
+      return a[0][0] == "elem" && a[0][1];
+    });
+
+    //array-find
+    run_test("array-find", function() {
+      var array1 = [5, 12, 8, 130, 44];
+      var found = array1.find(function(element) {
+        return element > 10;
+      });
+      return found == 12;
+    });
+
+    //pad-start-end
+    run_test("pad-start-end", function() {
+      return "test".padStart(8, "*") == "****test";
+    });
+
+    //array-includes
+    run_test("array-includes", function() {
+      return [1, 2, 3].includes(2);
+    });
+
+    //promises
+    run_test("promises", function() {
+      new Promise(function(resolve, reject) { resolve(); }).then(function() {});
+      return true;
+    });
+
+    //typedarrays
+    run_test("typedarrays", function() {
+      var int32View = new Int32Array(new ArrayBuffer(16));
+      int32View[2] = 2;
+      return int32View[2] == 2;
+    })
+
+    //selection-api
+    run_test("selection-api", function() {
+      window.getSelection();
+      return true;
+    });
+
+    //getrandomvalues
+    run_test("getrandomvalues", function() {
+      var array = new Uint32Array(10);
+      window.crypto.getRandomValues(array);
+      return true;
+    })
+  </script>
 </body>
 </html>
